@@ -18,18 +18,17 @@
             android:layout_height="match_parent"
             android:clipToPadding="false"
             android:scrollbarStyle="outsideOverlay"
-            android:paddingTop="116dp"
+            android:paddingTop="60dp"
             android:paddingLeft="@dimen/list_side_margin"
             android:paddingRight="@dimen/list_side_margin"
-            android:paddingBottom="28dp" />
+            android:paddingBottom="28dp"
+            android:layout_marginTop="@dimen/list_side_margin"/>
     </android.support.v4.widget.SwipeRefreshLayout>
-
-    <FrameLayout
-        android:id="@+id/toolbar_container"
+    <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="112dp"
-        android:background="@color/primary"
-        android:elevation="8dp">
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar_container">
+
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
@@ -47,6 +46,6 @@
                 android:contentDescription="@string/app_name" />
 
         </android.support.v7.widget.Toolbar>
-    </FrameLayout>
+    </android.support.design.widget.AppBarLayout>
 
 </android.support.design.widget.CoordinatorLayout><!-- From: file:/C:/Users/P01242/Desktop/xyzreader/XYZReader/src/main/res/layout/activity_article_list.xml -->
